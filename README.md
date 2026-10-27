@@ -12,8 +12,9 @@ curl -fsSL https://raw.githubusercontent.com/tobaye/ssh-pwlogin/main/enable-pwlo
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/tobaye/ssh-pwlogin/main/enable-pwlogin.sh -o enable-pwlogin.sh
-sudo sh enable-pwlogin.sh        # 给你当前这个账户开
-sudo sh enable-pwlogin.sh opc    # 给指定账户开
+sudo sh enable-pwlogin.sh          # 给你当前登录的这个账户开（推荐，不用管用户名是什么）
+sudo sh enable-pwlogin.sh ubuntu   # 指定账户时按系统写对：Ubuntu 的默认账户是 ubuntu
+sudo sh enable-pwlogin.sh opc      # Oracle Linux 的默认账户是 opc，Debian 一般是 debian
 ```
 
 ## 它做了什么
